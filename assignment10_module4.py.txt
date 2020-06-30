@@ -1,0 +1,96 @@
+
+In [41]:
+#Q1:
+print("original list")
+a1=[1,2,3,4,5]
+print(a1)
+
+print("cloned list")
+a2=a1[:]
+print(a2)
+original list
+[1, 2, 3, 4, 5]
+cloned list
+[1, 2, 3, 4, 5]
+In [42]:
+#Q2:
+print("original print")
+a1=[1,2,3,4,5,6,7]
+print(a1)
+a1.remove(1) #0th ele=1
+a1.remove(5) #4th ele=5
+a1.remove(6) #5th ele=6
+print("after removing specified ele")
+print(a1)
+original print
+[1, 2, 3, 4, 5, 6, 7]
+after removing specified ele
+[2, 3, 4, 7]
+In [48]:
+#Q3:
+print("original list")
+a1=[11,12,13,14,15,16,17,18,19,110,11,12,13,14]
+print(a1)
+a2=[]
+for i in a1:
+    if i%2==0:
+        a1.remove(i)
+    else:
+        a2.append(a1)
+print("after removing all even element")       
+print(a2)
+original list
+[11, 12, 13, 14, 15, 16, 17, 18, 19, 110, 11, 12, 13, 14]
+after removing all even element
+[[11, 13, 15, 17, 19, 11, 13]]
+In [54]:
+#Q4:
+print("original list")
+print(a1)
+a1=[1,1,22,22,34,45,56,23,23,12,12,67,100]
+a2=[]
+for i in a1:
+    if i not in a2:
+        a2.append(i)
+print("unique ele")       
+print(a2)
+original list
+[1, 1, 22, 22, 34, 45, 56, 23, 23, 12, 12, 67, 100]
+unique ele
+[1, 22, 34, 45, 56, 23, 12, 67, 100]
+In [59]:
+#Q5:
+def psb(n):
+    if n in range(4,10):
+        print("the number is within the range")
+    else:
+         print("the number is not within the range")
+           
+n=int(input("number please"))
+psb(n)
+number please9
+the number is within the range
+In [ ]:
+#Q6:
+a1=input("enter ur sentence including some 'upper' and 'lower' letter: ")
+upper_letter=[]
+lower_letter=[]
+for i in range(len(a1)):
+    if ((ord(a1[i])) <= 65 and (ord(a1[i])>=122)):
+        upper_letter.append(i)
+    else:
+        ((ord(a1[i])) <= 95 and (ord(a1[i])>= 90))
+        lower_letter.append(i)
+print("the number of upper letters are : ",len(upper_letter))  
+print("the number of lower letters are : ",len(lower_letter))
+In [ ]:
+
+In [ ]:
+
+In [ ]:
+
+In [ ]:
+
+In [ ]:
+
+ 
